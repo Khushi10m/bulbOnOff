@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        button{
+            width: 60px;
+            height: 60px;
+            border-radius: 60%;
+            box-shadow: 3px 4px 6px 1px rgba(229, 150, 150, 0.6);
+            border: none;
+        }
+   button b
+   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+   }
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="cont">
+            <div class="bulb">
+                <img id="bulbImg" src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg" width="300px" height="450px" alt="">
+            </div>
+            <button id="btn" onclick="onBulb()"><b>ON</b></span></button>
+
+        </div>
+    </center>
+
+    <script>
+     function onBulb(){
+       let bulb= document.getElementById('bulbImg');
+       let btn= document.getElementById('btn');
+       if(bulb.src=="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg"){
+        bulb.src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+       btn.innerText="OFF"
+       btn.style.backgroundColor="yellow";
+       btn.style.fontSize="18px"
+       }else{
+        bulb.src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+       btn.innerText="ON"
+       btn.style.backgroundColor="";
+       btn.style.fontSize="18px"
+
+       }
+     
+    }
+   
+    </script>
+</body>
+</html>
